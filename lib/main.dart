@@ -88,7 +88,7 @@ class _MyAppState extends State<MyApp> {
       if (await LocalData.getUserName() == authModel.admin!.auth!.username.toString() &&
           await LocalData.getPassword() == authModel.admin!.auth!.password.toString()) {
         if (context.mounted) {
-          Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => const GalleryScreen(isAdmin: true)), (route) => false);
+          Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => const GalleryScreen(isAdmin: true, productId: "",)), (route) => false);
         }
       } else {
         if (context.mounted) {

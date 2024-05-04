@@ -112,7 +112,8 @@ class _LoginScreenState extends State<LoginScreen> {
         await LocalData.setPassword(passwordController.text);
 
         if (context.mounted) {
-          Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => const GalleryScreen(isAdmin: true)), (route) => false);
+          Navigator.of(context)
+              .pushAndRemoveUntil(MaterialPageRoute(builder: (context) => const GalleryScreen(isAdmin: true, productId: "")), (route) => false);
         }
       } else {
         var snackBar = const SnackBar(content: Text("Invalid Username or Password"));

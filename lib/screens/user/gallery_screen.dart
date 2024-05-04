@@ -32,7 +32,9 @@ class _GalleryScreenState extends State<GalleryScreen> {
   @override
   void initState() {
     super.initState();
-    getGallery();
+
+    searchController.text = widget.productId.toString();
+    getGallery(key: widget.productId.toString());
   }
 
   @override
@@ -159,10 +161,6 @@ class _GalleryScreenState extends State<GalleryScreen> {
   getGallery({String key = ""}) async {
     setState(() {
       isLoading = true;
-      if (widget.productId != null) {
-        searchController.text = widget.productId.toString();
-        key = widget.productId.toString();
-      }
     });
     imageModelList.clear();
 

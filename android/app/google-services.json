@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "639659895565",
+    "project_id": "al-alif",
+    "storage_bucket": "al-alif.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639659895565:android:2177be68e033d4c1911e44",
+        "android_client_info": {
+          "package_name": "com.al_alif"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8iSQOp85MopCenSYwkRPHTfbJcMdWJR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
